@@ -233,4 +233,8 @@ psd
 thumb
 sketch
 
+<<<<<<< HEAD
 # End of https://www.toptal.com/developers/gitignore/api/python,database,react,flask
+=======
+# End of https://www.toptal.com/developers/gitignore/api/python,database,react,flask
+>>>>>>> 50bbee494d5f8a88c0c13f54de10d3b4b61a2c1c
