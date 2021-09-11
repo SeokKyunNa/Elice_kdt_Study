@@ -1,5 +1,6 @@
 '''
 적록색약
+일반, 적록색약 각각 나눠서 함수 작성
 '''
 import sys
 from collections import deque
@@ -37,6 +38,9 @@ def normal(graph):
                         new_n = n + dx[d]
                         new_m = m + dy[d]
 
+                        if [new_n, new_m] in dq:
+                            continue
+
                         if new_m < 0 or new_m > N-1 or new_n < 0 or new_n > N-1:
                             continue
                         
@@ -69,6 +73,9 @@ def color_weakness(graph):
                         new_n = n + dx[d]
                         new_m = m + dy[d]
 
+                        if [new_n, new_m] in dq:
+                            continue
+
                         if new_m < 0 or new_m > N-1 or new_n < 0 or new_n > N-1:
                             continue
                         
@@ -86,9 +93,3 @@ def color_weakness(graph):
     return count
 
 print(normal(grid), color_weakness(grid))
-
-
-# for n in range(33):
-#     print('RGB'*33)
-#     print('GBR'*33)
-#     print('BRG'*33)

@@ -1,5 +1,6 @@
 '''
 적록색약
+함수는 하나, 입력 데이터에서 Green을 Red로 치환해서 연산
 '''
 import sys
 from collections import deque
